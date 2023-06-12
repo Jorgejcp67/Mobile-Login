@@ -2,6 +2,8 @@ import React from "react";
 import { TouchableHighlight, StyleSheet, View, Text, Alert } from "react-native";
 
 
+
+
 const SuperButton =(props) => {
     return (
         <TouchableHighlight 
@@ -11,7 +13,7 @@ const SuperButton =(props) => {
             <View style={style.button}>
                 <Text style={style.valor}>{props.valor}</Text>
             </View>
-            </TouchableHighlight>
+        </TouchableHighlight>
 
     );
 }
@@ -22,9 +24,10 @@ const SuperButton =(props) => {
     },
     button:{
      alignItens:"center",
-     backgroundColor:'rgb(203, 196, 215)',
+     backgroundColor:'rgb(106, 38, 225)',
      padding:12,
      width:300,
+     textAlign:'center'
      
      
     },

@@ -1,35 +1,39 @@
 
 import React from 'react';
-import { StyleSheet, View, Alert} from 'react-native';
+import { StyleSheet,  View , Button } from 'react-native';
 
 import Titulo from '../../components/titulo';
 import MeuInput from '../../components/Input';
-import SuperButton from '../../components/SuperButton';
+
+
 
 
 export default function Login() {
 
-  const logar = ()=>{
-    Alert.alert("aqui vou fazer o login")
-  }
+ 
   return (
     <View style={styles.container}>
-      <Titulo titulo= "login"/>
+      <Titulo titulo= "Login"/>
       
       <MeuInput 
-      label= "e-mail"
+      label= "E-mail"
       placeholder= "exemplo@exemplo.com"/>
       
       <MeuInput 
       label= "Senha"
       placeholder= "123456"/>
 
-      <SuperButton
-      valor="entrar" 
-      acao={logar}>
-      
+      <MeuInput
+      label="Recuperar senha"
+      placeholder="Recuperar senha"/>
+       
+       
+      <Button
+         valor="Entrar"> 
+         
 
-      </SuperButton>
+         </Button>
+         
 
     </View>
    );
@@ -38,10 +42,8 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'orange',
+    backgroundColor: '#fba608',
         alignItems: 'center',
-
-        
-    justifyContent: 'center',
+        justifyContent: 'center',
   },
 });
